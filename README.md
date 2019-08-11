@@ -6,7 +6,7 @@ vplot is a python extension for lldb for visualization of C++ containers as [plo
 
 ## Installation
 
-The following text assumes that you cloned vplot to ~/vplot. If not, adjust accordingly.
+The following text assumes that you cloned vplot to ~/vplot.
 
 ### Install plotly and other dependencies. I use pip.
 
