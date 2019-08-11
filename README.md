@@ -26,17 +26,24 @@ command script import ~/vplot.py
 
 or you can add the line to ~/.lldbinit
 
-## vplot commands
+## vplot commands from lldb
+
+* Show std::vector variable ```test_vector``` from lldb at a breakpoint.
+```
+fr v --summary vplot test_vector
+```
 
 * Set the graph color.
-
-``` vplot color (red|blue|black|green|rgb(r,g,b))```
+``` 
+vplot color (red|blue|black|green|rgb(r,g,b))
+```
 
 * Clear the graph.
+```
+vplot clear
+```
 
-``` vplot clear```
-
-## Testing
-
+## Notes
+Only std::vector is supported at this time
 
 
