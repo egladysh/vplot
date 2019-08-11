@@ -30,17 +30,17 @@ or you can add the line to ~/.lldbinit
 
 * Show std::vector variable ```test_vector``` from lldb at a breakpoint.
 ```
-fr v --summary vplot test_vector
+(lldb) fr v --summary vplot test_vector
 ```
 
 * Set the graph color.
 ``` 
-vplot color (red|blue|black|green|rgb(r,g,b))
+(lldb) vplot color (red|blue|black|green|rgb(r,g,b))
 ```
 
 * Clear the graph.
 ```
-vplot clear
+(lldb) vplot clear
 ```
 
 ## Notes
