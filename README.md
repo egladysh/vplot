@@ -29,10 +29,12 @@ or you can add the line to ~/.lldbinit
 ## vplot commands
 
 * Set the graph color.
-```vplot color (red|blue|black|green|rgb(r,g,b))```
+
+``` vplot color (red|blue|black|green|rgb(r,g,b))```
 
 * Clear the graph.
-```vplot clear```
+
+``` vplot clear```
 
 ## Testing
 
