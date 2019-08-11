@@ -21,7 +21,7 @@ $ pip install pandas
 To do that you can enter the following in lldb everytime you start it.
 
 ```
-command script import ~/vplot.py
+command script import ~/vplot/src/vplot.py
 ```
 
 or you can add the line to ~/.lldbinit
