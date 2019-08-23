@@ -16,7 +16,7 @@ $ pip install numpy
 $ pip install pandas
 ```
 
-### Install vplot extension for lldb
+### Install vplot extension for lldb 
 
 To do that you can enter the following in lldb everytime you start it.
 
@@ -42,6 +42,40 @@ or you can add the line to ~/.lldbinit
 ```
 (lldb) vplot clear
 ```
+
+## Example
+
+To generate the image at the beginning, you can use example. To build it:
+
+``` sh
+$ cd ~/
+$ mkdir build
+$ cd build
+$ cmake ../vplot/example
+```
+
+Start debugging:
+
+``` sh
+$ lldb vplot_example
+```
+
+In the debugger:
+
+```
+(lldb) br s -f main.cpp -l 14 
+(lldb) br s -f main.cpp -l 19
+(lldb) run 
+(lldb) fr v --summary vplot test_vect 
+```
+You should see the first graph.
+
+```
+(lldb) vplot color red 
+(lldb) cont
+(lldb) fr v --summary vplot test_vect1
+```
+The second graph should be in red.
 
 ## Notes
 Only std::vector is supported at this time
