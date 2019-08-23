@@ -52,6 +52,7 @@ $ cd ~/
 $ mkdir build
 $ cd build
 $ cmake ../vplot/example
+$ make
 ```
 
 Start debugging:
